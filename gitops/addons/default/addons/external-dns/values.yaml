@@ -2,3 +2,17 @@ global:
   tolerations:
   - key: CriticalAddonsOnly
     operator: Exists
+
+# Define domain filters directly in values since the annotation is missing
+domainFilters:
+  - "bitsdance.com"  # Replace with your actual domain
+
+# Use AWS Route53 as the DNS provider
+provider: aws
+
+# Configure policy to sync records
+policy: sync
+
+# Set registry to track ownership of records
+registry: txt
+txtOwnerId: "eks-fleet"
