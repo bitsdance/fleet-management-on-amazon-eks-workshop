@@ -26,7 +26,7 @@ addons:
   eks_upgrade_insights_demo:
     enabled: true
   external_dns:
-    enabled: false
+    enabled: true
   external_secrets:
     enabled: true
   grafana_operator:
