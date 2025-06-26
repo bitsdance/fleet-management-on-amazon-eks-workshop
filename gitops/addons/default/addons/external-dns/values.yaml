@@ -20,6 +20,6 @@ txtOwnerId: "eks-fleet"
 # Define service account configuration directly
 serviceAccount:
   create: true
-  name: "external-dns"
+  name: "external-dns-sa"
   annotations:
     eks.amazonaws.com/role-arn: "arn:aws:iam::367123725217:role/ExternalDNSRole-eksfleet"  # This will use Pod Identity instead
